@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inner-container {
+    background: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    background-color: #F6F6F6;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: all .15s ease-in;
+    cursor: pointer;
+    &:disabled {
+        opacity: 0.3;
+        pointer-events: none;
+    }
+    &:hover {
+        background-color: #F9F9F9;
+    }
+    &.-reset {
+        background-color: red;
+    }
+}
